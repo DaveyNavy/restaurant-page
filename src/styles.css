@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'potta_oneregular';
+    src: url('pottaone-regular-webfont.woff2') format('woff2'),
+         url('pottaone-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+button {
+    padding: 1rem 2rem;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-family: "potta_oneregular";
+    font-size: 2rem;
+}
+
+
+#content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 1rem;
+    border-radius: 3rem;
+    background-color: yellow;
+}
+
+h1 {
+    font-family: "potta_oneregular";
+    font-size: 4rem;
+}
+
