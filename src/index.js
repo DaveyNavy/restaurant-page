@@ -1,7 +1,7 @@
 import "./styles.css"
 import homePage from "./home.js";
 import menuPage from "./menu.js";
-import menu from "./menu.js";
+import aboutPage from "./about.js";
 
 const homeButton = document.querySelector(".home");
 const menuButton = document.querySelector(".menu");

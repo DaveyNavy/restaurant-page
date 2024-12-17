@@ -1,7 +1,7 @@
 import bee from "./images/bee.svg";
 import { clear, createHeader, createItem } from "./utility.js";
 
-export default function menu() {
+export default function menuPage() {
     clear();
 
     const container = document.querySelector("#content");

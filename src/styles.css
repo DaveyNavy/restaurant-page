@@ -183,6 +183,10 @@ img {
     height: 10rem;
 }
 
+.medium {
+    height: 15rem;
+}
+
 .padding-left {
     padding-left: 2rem;
 }

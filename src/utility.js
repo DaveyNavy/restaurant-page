@@ -48,7 +48,7 @@ export function createItem(classes, ...rest) {
     if (classes != null ) {
         classes.forEach(i => {
             itemContainer.classList.add(i);
-            if (i != "margin-bottom")  item.classList.add(i);
+            item.classList.add(i);
         });
     }
 
