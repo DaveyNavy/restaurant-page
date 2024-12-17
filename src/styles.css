@@ -57,6 +57,7 @@ button {
     border-radius: 3rem;
     background-color: rgb(255, 222, 115);
     width: 50%;
+    padding: 3rem; 
 }
 
 .heading-container {
@@ -75,10 +76,10 @@ button {
         0 66.6%);
     width: 47rem;
     height: 4rem;
-    margin: 0px 40px 100px 40px;
     padding: 10px;
     position: relative;
     margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .heading {
@@ -96,6 +97,21 @@ button {
     width: 47rem;
     height: 4rem;
     box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.short-header {
+    width: 20rem;
+}
+
+.short-header > h1 {
+    font-size: 2rem;
+}
+
+.first {
+    margin-top: 0;
 }
 
 h1 {
@@ -141,11 +157,10 @@ img {
     height: 20rem;
     box-sizing: border-box;
     padding: 30px;
-
+    position: relative;
 }
 
-.item > p, .item > div {
-    text-align: center;
+.item > * {
     margin: 0;
     padding: 0;
 }
@@ -154,10 +169,20 @@ img {
     padding-left: 2rem;
 }
 
+.menu-item-image {
+    width: 5rem;
+    height: 5rem;
+    border: 1px solid red;
+    border-radius: 5px;
+    position: absolute;
+    right: 4rem;
+    bottom: 2rem;
+}
+
 .small {
     height: 10rem;
 }
 
-.margin-bottom {
-    margin-bottom: 3rem;
+.padding-left {
+    padding-left: 2rem;
 }

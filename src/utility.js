@@ -5,7 +5,7 @@ export function clear() {
     }
 }
 
-export function createHeader(titleText, ...rest) {
+export function createHeader(titleText, classes, ...rest) {
     const container = document.querySelector("#content");
 
     const heading = document.createElement("div");
@@ -15,11 +15,19 @@ export function createHeader(titleText, ...rest) {
     const titleContainer = document.createElement("div");
     titleContainer.classList.add("heading");
 
+    if (classes != null ) {
+        classes.forEach(i => {
+            heading.classList.add(i);
+            titleContainer.classList.add(i);
+        });
+    }
+
     const title = document.createElement("h1");
     title.textContent = titleText;
     titleContainer.appendChild(title);
     heading.appendChild(titleContainer);
 
+    
     if (rest.length > 0) {
         Array.from(rest).forEach(element => {
             heading.appendChild(element);
