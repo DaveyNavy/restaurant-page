@@ -1,30 +1,52 @@
 @font-face {
     font-family: 'potta_oneregular';
-    src: url('pottaone-regular-webfont.woff2') format('woff2'),
-         url('pottaone-regular-webfont.woff') format('woff');
+    src: url('./fonts/pottaone-regular-webfont.woff2') format('woff2'),
+         url('./fonts/pottaone-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+* {
+    font-family: "potta_oneregular";
+}
+
+html {
+    background-image: url("./images/bg.png");
+}
+
+h1, h2, p {
+    padding: 0;
+    margin: 0;
 }
 
 header {
     display: flex;
     justify-content: center;
-    margin-top: 2rem;
+    padding-top: 2rem;
+    width: 100vw;
+    background-color: rgb(255, 222, 115);
 }
 
 nav {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
 }
 
 button {
-    padding: 1rem 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     font-family: "potta_oneregular";
-    font-size: 2rem;
+    font-size: 1.5rem;
+    width: 130px;
+    background-color: rgb(255, 222, 115);
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+}
 
 #content {
     display: flex;
@@ -33,11 +55,109 @@ button {
     gap: 2rem;
     margin: 2rem 1rem;
     border-radius: 3rem;
-    background-color: yellow;
+    background-color: rgb(255, 222, 115);
+    width: 50%;
+}
+
+.heading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(193, 106, 8);
+    clip-path: polygon(
+        0 33.3%,
+        6% 0,
+        94% 0,
+        100% 33.3%,
+        100% 66.6%,
+        94% 100%,
+        6% 100%,
+        0 66.6%);
+    width: 47rem;
+    height: 4rem;
+    margin: 0px 40px 100px 40px;
+    padding: 10px;
+    position: relative;
+    margin-top: 3rem;
+}
+
+.heading {
+    background-color: rgb(255, 198, 11);
+    clip-path: polygon(
+    0 33.3%,
+    5% 0,
+    95% 0,
+    100% 33.3%,
+    100% 66.6%,
+    95% 100%,
+    5% 100%,
+    0 66.6%);
+    text-align: center;
+    width: 47rem;
+    height: 4rem;
+    box-sizing: border-box;
 }
 
 h1 {
     font-family: "potta_oneregular";
-    font-size: 4rem;
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
+img {
+    width: 4rem;
+    position: absolute;
+}
+
+.left-bee {
+    left: 0.5rem;
+}
+
+.right-bee { 
+    right: 0.5rem;
+}
+
+.item-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(193, 106, 8);
+    clip-path: polygon(0px 21%, 11% 0px, 89% 0px, 100% 21%, 100% 79%, 89% 100%, 11% 100%, 0px 79%);
+    width: 30rem;
+    height: 20rem;
+    padding: 20px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgb(255, 198, 11);
+    clip-path: polygon(0px 20%, 10% 0px, 90% 0px, 100% 20%, 100% 80%, 90% 100%, 10% 100%, 0px 80%);
+    width: 30rem;
+    height: 20rem;
+    box-sizing: border-box;
+    padding: 30px;
+
+}
+
+.item > p, .item > div {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.item > h2 {
+    padding-left: 2rem;
+}
+
+.small {
+    height: 10rem;
+}
+
+.margin-bottom {
+    margin-bottom: 3rem;
+}
